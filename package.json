@@ -1,0 +1,44 @@
+{
+  "name": "git-narrative",
+  "version": "0.1.0",
+  "description": "Generate documentary-style narratives from any git repository's history using Claude",
+  "type": "module",
+  "bin": {
+    "git-narrative": "./dist/index.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/index.ts",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "@anthropic-ai/claude-agent-sdk": "^0.2.51"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.0.0",
+    "typescript": "^5.7.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": [
+    "git",
+    "narrative",
+    "documentary",
+    "claude",
+    "ai",
+    "history",
+    "changelog"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/git-narrative"
+  }
+}
